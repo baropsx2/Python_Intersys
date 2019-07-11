@@ -12,8 +12,10 @@ cadenas([“hola”, 23, 56, “frfr”]) ---> [“hola”, “frfr”]
 def cadenas(lista):
     lista_almacen = []
     for x in lista:
-        if x == :
+        if x == type([]):
+            lista_almacen.insert(lista_almacen)
+        return lista_almacen
 
 
 
-cadenas([1, 2, 3, “hola”, 0, “mundo”])
+# cadenas([1, 2, 3, “hola”, 0, “mundo”])
