@@ -9,4 +9,5 @@ cadenas([“hola”, 23, 56, “frfr”]) ---> [“hola”, “frfr”]
 
 
 
-def cadenas(lista)
+def cadenas(lista):
+    
