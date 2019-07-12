@@ -7,15 +7,17 @@ cadenas([1, 2]) ---> []
 cadenas([“hola”, 23, 56, “frfr”]) ---> [“hola”, “frfr”]
 '''
 
-
-
 def cadenas(lista):
-    lista_almacen = []
-    for x in lista:
-        if x == type([]):
-            lista_almacen.insert(lista_almacen)
-        return lista_almacen
+    resultado = []
+    for elem in lista:
+        if type(elem) == type(""):
+            resultado.append(elem)
+        else:
+            resultado
+    print(resultado)
+    return resultado
 
 
-
-# cadenas([1, 2, 3, “hola”, 0, “mundo”])
+cadenas([1, 2, 3, "hola", 0, "mundo"])
+cadenas([1, 2])
+cadenas(["hola", 23, 56, "frfr"])

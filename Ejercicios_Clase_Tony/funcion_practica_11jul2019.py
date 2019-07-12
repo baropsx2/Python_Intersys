@@ -3,7 +3,11 @@ def cuantos(cadena, caracter):
     for x in cadena:
         if x == caracter:
             ocurrencias += 1
-        return ocurrencias
+    print(ocurrencias)
+    return ocurrencias
 
 
-cadena =
+cuantos("hola mundo", "o")
+cuantos("otra cosa", "a")
+cuantos("fale frfr", "f")
+cuantos("hola", "x")
