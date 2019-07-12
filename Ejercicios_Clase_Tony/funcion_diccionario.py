@@ -6,6 +6,7 @@ def joven(diccionario):
     print(resultado)
     return resultado
 
+
 d = {
     "Tony": 32,
     "X": 26,
