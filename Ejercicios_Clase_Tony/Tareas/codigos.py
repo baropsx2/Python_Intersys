@@ -33,6 +33,16 @@ def get_paises(dic_codigos):
     print(lista_paises)
     return lista_paises
 
+# Terminar función - Devuelve una lista con los países que empiecen con la letra dada:
+
+def get_pais(letra):
+    lista_pais = []
+    for key, val in letra.items():
+        if key.startswith(key):
+            lista_pais.append(key)
+    print(lista_pais)
+    return lista_pais
+
 
 codigos = {"Albania": 355,
            "Alemania": 49,
@@ -45,3 +55,6 @@ get_codigo(codigos, "Albania")
 get_codigo(codigos, "USA")
 
 get_paises(codigos)
+
+get_pais("A")
+get_pais("M")
