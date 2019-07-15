@@ -17,13 +17,17 @@ def agrega_pais(dic_codigos, pais, codigo)    --->   Agrega o actualiza el pais 
     agrega_pais(codigos, "Mexico", 54)    --->    Devuelve el diccionario codigos con la actualización de {"Mexico": 54}
 '''
 
-#Función para devolver el código telefónico del país que recibe si existe, caso contrario devuelve None
+# Función para devolver el código telefónico del país que recibe si existe, caso contrario devuelve None
+
+
 def get_codigo(dic_codigos, pais):
     for key, val in dic_codigos.items():
         if key == pais:
             print(val)
             return val
     return None
+
+# Devuelve una lista con los nombres de los países en el diccionario de codigos
 
 
 def get_paises(dic_codigos):
@@ -35,13 +39,14 @@ def get_paises(dic_codigos):
 
 # Terminar función - Devuelve una lista con los países que empiecen con la letra dada:
 
-def get_pais(letra):
-    lista_pais = []
-    for key, val in letra.items():
-        if key.startswith(key):
-            lista_pais.append(key)
-    print(lista_pais)
-    return lista_pais
+
+def get_pais(let_inic):
+    paises = list()
+    for key in codigos.keys():
+        if key.startswith(let_inic):
+            paises.append(key)
+    print(paises)
+    return paises
 
 
 codigos = {"Albania": 355,
