@@ -37,7 +37,7 @@ def get_paises(dic_codigos):
     print(lista_paises)
     return lista_paises
 
-# Terminar función - Devuelve una lista con los países que empiecen con la letra dada:
+# Devuelve una lista con los países que empiecen con la letra dada:
 
 
 def get_pais(let_inic):
@@ -47,6 +47,26 @@ def get_pais(let_inic):
             paises.append(key)
     print(paises)
     return paises
+
+# 4a función - Incompleta
+
+
+def agrega_pais(dic_codigos, pais, codigo):
+    pais_key = []
+    codigo_val = []
+    dicExtra = {}
+    for key, val in dic_codigos.items():
+        if key == pais:
+            pais_key.append(key)
+        elif val == codigo:
+            codigo_val.append(val)
+        else:
+            pais_key.append(key), codigo_val.append(val)
+
+    dicExtra = dict(zip(pais_key, codigo_val))
+    dicExtra.update(dic_codigos)
+    print(dic_codigos)
+    return dic_codigos
 
 
 codigos = {"Albania": 355,
